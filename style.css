@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100%;
+}
+.html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 9999;
+    background-color: #5C8374 ;
+    /* box-shadow: 0 0 15px blue ; */
+}
+.navbar .logo h1{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    /* border-bottom: 4px solid #161A30; */
+    /* border: 3px solid;  */
+    border-radius: 5px; */
+}
+
+.navbar .menu li{
+    list-style: none;
+    font-size: 10px;
+    /* display: block; */
+    display: inline-block;
+    margin-left: 20px;
+    /* color: white;
+    text-decoration: none; */
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+ 
+
+.menu{
+    height: 20px;
+   
+}
+.aktif:hover{
+    border-bottom: 4px solid #FFC436 ;
+    transition: 0.2s;
+} 
+
+.konten{
+   /* background-image: url(gmbr1.jpg); */
+   background-size: cover;
+   background-repeat: no-repeat; 
+   padding: 0 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   color: #424144 ;
+   height: 100vh;
+  
+}
+
+.konten h1{
+    font-size: 40px;
+}
+.konten p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.konten button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    background:#5C8374 ;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.konten button:hover{
+    /* background: #D80032; */
+    transition: 0.5s;
+}
+
+
+
+/* style2 */
+
+.navbar1{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    z-index: 999;
+    background-color: #5C8374 ;
+    /* box-shadow: 0 0 15px blue ; */
+}
+.navbar1 .logo1 h1{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    /* border-bottom: 4px solid #161A30; */
+    /* border: 3px solid;  */
+    border-radius: 5px; 
+}
+
+.navbar1 .menu1 li{
+    list-style: none;
+    font-size: 10px;
+    /* display: block; */
+    display: inline-block;
+    margin-left: 20px;
+    /* color: white;
+    text-decoration: none; */
+}
+.navbar1 .menu1 li a{
+    display: block;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu1{
+    height: 20px;
+   
+}
+.aktif1:hover{
+    border-bottom: 4px solid #FFC436 ;
+    transition: 0.2s;
+} 
+.gmbr{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-left: 200px;
+    margin-top: 70px;
+    
+}
+.gb{
+    width: 500px;
+    height: 500px;
+}
+
+.gambar1{
+    display: flex;
+}
+
+.section{
+    padding: 10px 5%;
+   
+}
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+.prod{
+    width: 300px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.prod .img img{
+    height: 250px;
+    width: 100%;
+}
+.prod .img .desc{
+    padding: 5px px;
+    opacity: 0.8;
+}
+/* .prod >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out
+}
+.prod > img:hover{
+    transform: scale(1.1);
+} */
+.title{
+    font-weight: 500;
+    font-size: 15px;
+    color: #424144;
+    padding-top: 5px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-top: 5px;
+   font-weight:bold;
+   color: red;
+   /* padding-bottom: 10px; */
+}
+.btn{
+    /* border-radius:50px ; */
+     margin-top: 30px; 
+    padding: 15px 100px; 
+    background-color: #EA5455;
+    border: none;
+    color: white;
+    /* background:red ; */
+    font-size: 15px;
+    /* cursor: pointer; */
+}
+.btn:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.card{
+ justify-content: center;
+ display: flex;
+ margin-top: 100px;
+}
+
+/* tentang kami */
+
+.ttgkami{
+    background-size: cover;
+   background-repeat: no-repeat; 
+   padding: 0 5%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+   justify-content: center;
+   align-items: flex-start;
+   color: #424144 ;
+   height: 80vh;
+}
+.kata{
+    margin-top: 7px;
+    text-align: justify;   
+}
+ .ind4{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144 ;
+    height: 100vh;
+
+ }
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 50px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 175px;
+    width: 400px;
+    margin-bottom: 100px;
+    /* background-color: blue; */
+    /* position: relative; */
+    /* top: 50px;  */
+}
+
+/* .ind4 {
+    text-align: center;
+} */
+
+.ind4{
+    /* justify-content: space-between; */
+    margin-right: 300px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.gabungan{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #5C8374;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn3:hover{
+    background-color: #45a049;
+}
+
+/* .gabungan{
+    
+
+} */
