@@ -5,30 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-<title>AJWA KOMPUTER</title>
-<a href="index2.html"></a>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>AJWA KOMPUTER</title>
+    <a href="index2.html"></a>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo"><h1>AJWA KOMPUTER</h1></div>
         <ul class="menu">
-            <li><a href="" class="aktif">Beranda</a></li>
-            <li><a href="index2.html" class="aktif1">Katalog</a></li>
-            <li><a href="index3.html" class="aktif">Tentang Kami</a></li>
-            <li><a href="index4.html" class="aktif">Hubungi Kami</a></li>
+            <li><a href="" class="aktif" onclick="changeActive(this)">Beranda</a></li>
+            <li><a href="index2.html" class="aktif1" onclick="changeActive(this)">Katalog</a></li>
+            <li><a href="index3.html" class="aktif" onclick="changeActive(this)">Tentang Kami</a></li>
+            <li><a href="index4.html" class="aktif" onclick="changeActive(this)">Hubungi Kami</a></li>
         </ul>
     </nav>
     <div class="gambar1">
         <div class="konten">
              <h1>Telah Hadir Di Toko Kami</h1>
              <p>Beli Online, Ambil Di Toko!!!</p>
-            <a href="index2.html"><button class="btn3"> Beli Sekarang</button></a>
+            <a href="index2.html"><button class="btn3" onclick="showPopup()">Beli Sekarang</button></a>
         </div>
         <div class="gmbr">
             <img src="gambar/gbr2.jpg" alt="" class="gb">
         </div>
-    </div>    
+    </div>
+
+    <script>
+        // Fungsi untuk mengganti kelas aktif pada menu
+        function changeActive(element) {
+            var links = document.querySelectorAll('.menu a');
+            links.forEach(link => {
+                link.classList.remove('aktif');
+            });
+            element.classList.add('aktif');
+        }
+
+        // Fungsi untuk menampilkan pesan pop-up saat tombol "Beli Sekarang" diklik
+        function showPopup() {
+            alert("Anda akan diarahkan ke halaman Katalog untuk membeli produk!");
+        }
+    </script>
 </body>
 </html>
